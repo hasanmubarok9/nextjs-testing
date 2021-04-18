@@ -6,7 +6,6 @@ import Button from '@material-ui/core/Button';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import ProTip from '../src/ProTip';
-import Link from '../src/Link';
 import Copyright from '../src/Copyright';
 
 function Alert(props) {
