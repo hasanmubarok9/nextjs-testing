@@ -29,7 +29,6 @@ export default function Index() {
     .then(async res => {
         const { ok } = await res;
         const result = await res.json();
-        console.log("result ", result)
         setIsError(false)
         if(ok){
           setResults(result.response.docs)
@@ -54,7 +53,7 @@ export default function Index() {
       </Box>
       <Box my={4}>
         {
-          isError ? <Typography variant="h5">Oops, An Error Occured</Typography> :
+          isError ? <Typography role="alert" variant="h5">Oops, An Error Occured</Typography> :
           results.length > 0 && results.map((data, index) => (
               <Paper role="article" elevation={3} key={index} className={classes.paper}>
                 <Typography variant="h6">{data.headline.main}</Typography>
