@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "clsx": "latest",
+    "isomorphic-unfetch": "^3.1.0",
     "jest": "^26.6.3",
     "next": "latest",
     "prop-types": "latest",
@@ -23,5 +25,8 @@
     "coverage": "jest --collectCoverage=true",
     "coveragewatch": "jest --collectCoverage=true --watchAll",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "msw": "^0.28.2"
   }
 }

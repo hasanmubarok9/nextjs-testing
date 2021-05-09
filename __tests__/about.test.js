@@ -8,9 +8,6 @@ test('click snackbar button and display snackbar', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('This is a success message!')
 });
 
-// 
-
-// 
 test('click snackbar button and display snackbar, then close the snackbar', async () => {
     const { getByText } = render(<About />);
     fireEvent.click(getByText("Open Success Snackbar"))
